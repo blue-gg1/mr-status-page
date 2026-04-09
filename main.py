@@ -19,7 +19,11 @@ def SetDateGlobals(): # set up dates that will be true when the code is run
 def CheckPagePing(Url: str):
     pass
 
-def CheckPageHttp(Url: str, Method: str):
+def CheckPagePort(Url: str, Port: int):
+    # psping or nmap ??
+    pass
+
+def CheckPageHttp(Url: str, Method: str, Port: int):
     pass
 
 def CheckPageBrowser(Url: str):
