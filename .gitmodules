@@ -1,0 +1,3 @@
+[submodule "github-statuses"]
+	path = github-statuses
+	url = git@github.com:mrshu/github-statuses.git

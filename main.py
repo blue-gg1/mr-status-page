@@ -1,5 +1,14 @@
 import os, ntpath, shutil
 
+
+def CheckPagePing(Url):
+    pass
+
+def CheckPageHttp(Url, Method):
+    pass
+
+
+
 def AddHtmlToGit():
     print("making the git commit")
     GitCommitMessage = "Updated the HTML from live now here: https://*.pages.dev/index.html"
@@ -8,4 +17,3 @@ def AddHtmlToGit():
     print(os.system("git add ."))
     print(os.system("git commit -am "+chr(34)+GitCommitMessage+chr(34)))
     print(os.system("git push"))
-
