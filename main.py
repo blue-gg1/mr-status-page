@@ -5,18 +5,16 @@ from datetime import date, datetime
 #  5 * * * * /usr/sbin/python /app/code/main.py
 
 def SetDateGlobals(): # set up dates that will be true when the code is run
-    global today
-    global this_year
-    global this_month
-    global this_day
-    global this_hour
     global now
+    global this_hour
+    global this_day
+    global this_month
+    global this_year
     now = datetime.now()
     this_hour = now.strftime("%H")
     this_day = now.day
     this_month = now.month
     this_year = now.year
-
 
 def CheckPagePing(Url: str):
     pass
@@ -27,7 +25,7 @@ def CheckPageHttp(Url: str, Method: str):
 def CheckPageBrowser(Url: str):
     pass
 
-def AddInfoToJson(TimeOfCheck, StatusData):
+def AddInfoToJson(TimeOfCheck: datetime, StatusData: dict):
     pass
 
 def RenderHtmlFromJson(JsonFile):
@@ -41,10 +39,3 @@ def AddHtmlToGit():
     print(os.system("git add ."))
     print(os.system("git commit -am "+chr(34)+GitCommitMessage+chr(34)))
     print(os.system("git push"))
-
-SetDateGlobals()
-print(now)
-print(this_year)
-print(this_month)
-print(this_day)
-print(this_hour)
