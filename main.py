@@ -1,5 +1,8 @@
 import os, ntpath, shutil
 
+# planned way to call this
+#  5 * * * * /usr/sbin/python /app/code/main.py
+
 
 def CheckPagePing(Url):
     pass
@@ -7,7 +10,14 @@ def CheckPagePing(Url):
 def CheckPageHttp(Url, Method):
     pass
 
+def CheckPageBrowser(Url):
+    pass
 
+def AddInfoToJson():
+    pass
+
+def RenderHtmlFromJson(JsonFile):
+    pass
 
 def AddHtmlToGit():
     print("making the git commit")
